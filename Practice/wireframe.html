@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clothing Wireframe</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: sans-serif;
+    }
+    .block {
+      border: 1px dashed #999;
+      background-color: #f0f0f0;
+      margin: 10px;
+    }
+    header, nav, footer {
+      height: 60px;
+    }
+    nav {
+      margin-top: 0;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    aside {
+      flex: 1;
+      min-width: 200px;
+      height: 400px;
+    }
+    main {
+      flex: 3;
+      min-width: 300px;
+      padding: 10px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 10px;
+    }
+    .product {
+      height: 150px;
+      background-color: #ccc;
+      border: 1px solid #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="block"></header>
+
+  <nav class="block"></nav>
+
+  <div class="container">
+    <aside class="block"></aside>
+    <main class="block">
+      <div class="product-grid">
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="block"></footer>
+
+</body>
+</html>
