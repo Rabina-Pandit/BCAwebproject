@@ -95,8 +95,28 @@ section h1{
     margin-bottom: 30px;
     color: #1e1e2f;
 }
+
 .product-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 30px;
 
 }
+.product-grid{
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    padding: 20px;
+    transition: transform 0;
+
+}
+.product-card:hover{
+    transform: translateY(5px)
+}
+ .product-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+ }
